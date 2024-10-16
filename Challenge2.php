@@ -1,11 +1,11 @@
 <?php
 
-function decode($message) {
-    $lenghtMessage= strlen($message);
-    $halfMessage =$lenghtmessage/2;
-    $subStringKeyFigure = mb_substr($Message,5,$lenghtMessage);
-    $replaceChain = str_ireplace("@#?",'',$subStringKeyFigure);
-    $reverseChain = strrev($replaceChain);
+function decode($message)  { /* c'est la fonction qui execute les 3 messages*/
+    $lenghtMessage = strlen($message); /* calcul la gtaille de la chaine*/
+    $halfMessage = $lenghtmessage/2; /* divise en 2 le nombre de caractère */
+    $subStringKeyFigure = mb_substr($Message,5,$lenghtMessage); /* récupère la 6e caractère de la sous chaine de la longueur du chiffre-clé */
+    $replaceChain = str_ireplace("@#?",'',$subStringKeyFigure); /* str_ireplace remplace ‘@#?’ par un espace */
+    $reverseChain = strrev($replaceChain); /* inverse la chaine de caractères */ 
 
 }
 
