@@ -9,7 +9,7 @@ foreach($movies as $movie) { // for each array movie show first step (movie's ti
 echo “Dans le film $movie[0], ";
 
 foreach($movies as $movie)
-echo "les principaux acteurs sont : $movie[1],[2],[3]"; // for each array movie show each 
+echo "les principaux acteurs sont : $movie[(1, 2, 3)]"; // for each array movie show each 
 
 }
 
