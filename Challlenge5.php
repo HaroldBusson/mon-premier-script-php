@@ -4,7 +4,7 @@ $opponentWeapon = $weapons[rand(0,2)]; // Cela permet de choisir une arme de man
 // TODO
 
 
-switch($opponentWeapon) {
+switch($opponentWeapon) { // each weapon are tested
     case "fist":
         $stevensonWeapon = "fist";
         echo "le poing bat le fouet mais perd contre le pistolet";
@@ -18,5 +18,6 @@ switch($opponentWeapon) {
         echo "le pistolet bat le poing mais perd contre le fouet";
         break;
 }
-echo "You should choose this : $stevensonWeapon .";
+
+echo "You should choose this : $stevensonWeapon ."; // show the recommended weapon
 ?>
