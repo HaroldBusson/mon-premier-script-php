@@ -5,6 +5,6 @@ function writeSecretSentence($param1, $param2) {// function writeSecretSentence 
         return $sentence; // return (renvoie) the sentence 
 }
 
-echo writeSecretSentence(return);
+echo writeSecretSentence($sentence);
     
 ?>
