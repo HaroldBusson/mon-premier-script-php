@@ -1,4 +1,8 @@
 <?php $characters = [
+    "Harold" =>[
+        "city" => "Paris",
+        "weapon" => "Smith & Wesson"
+    ],
     "Negan" => [
         "city" => "The Sanctuary",
         "weapon" => "Lucille"
@@ -15,7 +19,7 @@
 
 // We write code here
 echo "<pre>";
-var_dump($characters["Negan"]);
+var_dump($characters);
 echo "</pre>";
 
 ?>
