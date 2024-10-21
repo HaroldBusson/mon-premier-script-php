@@ -1,5 +1,8 @@
 <?php
-
+/* File : Challenge 2
+Name : Harold
+date : 21/10/2024
+*/
 function decode($message)  { /* c'est la fonction qui execute les 3 messages*/
     $lenghtMessage = strlen($message); /* calcul la gtaille de la chaine*/
     $halfMessage = $lenghtMessage/2; /* divise en 2 le nombre de caractère */
