@@ -8,7 +8,6 @@ echo "nom: ". ${$tableauDeNom[0]};
 $monNomdeVariable = "";
 $monNomdeVariable ??= 51;
 
-echo " Résultat : "($monNomdeVariable + $maJolieVariable);
 var_dump($argv);
 
 ?>
