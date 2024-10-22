@@ -7,6 +7,6 @@ echo "Division" . $arg[1] / $argv[2] . "\n";
 echo "Expotentiel" . $arg[1] ** $argv[2] . "\n";
 echo "Modulo" . $arg[1] % $argv[2] . "\n";
 
- /* autre exercice *
+ /* autre exercice */
 
 ?>
