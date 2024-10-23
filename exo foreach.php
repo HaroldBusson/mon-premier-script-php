@@ -20,5 +20,5 @@ foreach ($personnes as $personne) {
     
     echo "Nom: " . $personne["nom"] . ", Âge: " . $personne["âge"] . ", Ville: " . $personne["ville"] . "\n";
 }
-var_dump($GLOBALS)
+
 ?>
