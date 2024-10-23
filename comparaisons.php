@@ -18,4 +18,6 @@ echo ($valeur1 === $valeur3) ? "Vrai\n" : "Faux\n"; // Faux (types différents)
 echo "\n!= et !== :\n";
 echo ($valeur1 != $valeur3) ? "Vrai\n" : "Faux\n";  // Faux (ils sont égaux)
 echo ($valeur1 !== $valeur3) ? "Vrai\n" : "Faux\n"; // Vrai (non identique, types différents)
+
+print_r($_GLOBALS);
 ?>
