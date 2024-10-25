@@ -4,7 +4,7 @@ Name : Harold
 date : 21/10/2024
 */
 function decode($message)  { /* c'est la fonction qui execute les 3 messages*/
-    $lenghtMessage = strlen($message); /* calcul la gtaille de la chaine*/
+    $lenghtMessage = strlen($message); /* calcul la taille de la chaine*/
     $halfMessage = $lenghtMessage/2; /* divise en 2 le nombre de caractère */
     $subStringKeyFigure = mb_substr($message,5,$lenghtMessage); /* récupère la 6e caractère de la sous chaine de la longueur du chiffre-clé */
     $replaceChain = str_ireplace("@#?",'',$subStringKeyFigure); /* str_ireplace remplace ‘@#?’ par un espace */
