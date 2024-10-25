@@ -6,9 +6,11 @@ $movies = [
 ]; // Array with movies and actors
 
 foreach($movies as $movie) { // for each array movie show first step (movie's title)
+}
 echo “Dans le film $movie[0], ";
 
-foreach($movies as $movie)
+foreach($movies as $movie){
+}
 echo "les principaux acteurs sont : $movie[(1, 2, 3)]"; // for each array movie show each 
 
 }
