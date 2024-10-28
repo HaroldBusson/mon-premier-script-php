@@ -15,7 +15,7 @@
 
     if ($result->num_rows > 0) {
         // Affichage des données de l'utilisateur
-        while ($row = $result->fetch_assoc()) {
+        while ($row = $result->fetch_assoc()) {     // fdetch_assoc Récupère la ligne suivante d'un ensemble de résultats sous forme de tableau associatif
             echo "Nom: " . $row["nom"]. " - Email: " . $row["email"]. "
                                             <br>
                                             ";
