@@ -1,0 +1,29 @@
+CREATE DATABASE IF NOT EXITS ECOMMERCE
+USE ECOMMERCE;
+
+CREATE TABLE Customer (
+id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+firstname VARCHAR (100),
+familyname VARCHAR (100)
+);
+
+CREATE TABLE Order (
+id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+`date` DATETIME,
+`status` SET ("Created", "check", "ship"),
+FOREIGN KEY idCustomer REFERENCES Customer (id),
+total FLOAT (10)
+);
+
+CREATE TABLE Product (
+id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+`name` VARCHAR (100),
+price FLOAT (100)
+);
+
+CREATE TABLE OrderOrder_Product (
+id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+FOREIGN KEY id_order REFERENCES Order (id) INT (100),
+FOREIGN KEY id_product REFERENCES Product (id) (100),
+quantity INT (100)
+);
