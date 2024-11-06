@@ -162,10 +162,24 @@ echo mult(5,4);
 
 function puissance(int $a, int $b): int
 {
-    if ($b === 0) return 1; // condition  d'arret
-    if ($b === 1 ) return $a;
+    if ($b === 0) return 1; // condition  d'arret Cette ligne vérifie si l'exposant b est égal à 0.
+    if ($b === 1 ) return $a; //  la fonction vérifie si l'exposant est égal à 1. Si b est 1, la fonction retourne simplement.Cela permet d'arrêter également la récursion 
 
-    return $a * puissance($a,$b - 1); 
+    return $a * puissance($a,$b - 1); // Elle retourne la base a multipliée par le résultat de la fonction puissance appelée sur a et b - 1.
 }
 
-?>
+echo puissance(4, 2);
+
+echo "<br/><br/>";
+
+echo "Exercice 13 :<br/>";
+
+/* Factorielle */
+function factorial(int $n): int
+{
+    if ($n === 0) return 1; // la définition mathématique, le factoriel de 0 est égal à 1
+
+    return $n * factorial($n - 1); // Si $n n'est pas égal à 0, la fonction retourne le résultat de $n multiplié par le factoriel de (n - 1)
+}
+
+echo factorial(5);
