@@ -16,7 +16,7 @@
             title="Le nom doit contenir que des lettres, des espaces et des tirets">
     </div>
     <div>
-        <label for="firstname" id="firstname" name="firstname"></label>
+        <label for="firstname"> Prénom :</label>
         <input type="text" id="familyname" name="firstname" required
         pattern="^[a-zA-ZÀ-ÿ\s\-]+$"
             title="Le nom doit contenir que des lettres, des espaces et des tirets">
