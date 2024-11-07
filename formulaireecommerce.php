@@ -17,11 +17,15 @@
     </div>
     <div>
         <label for="firstname" id="firstname" name="firstname"></label>
-        <input type="text" id="familyname" name="firstname" required>
+        <input type="text" id="familyname" name="firstname" required
+        pattern="^[a-zA-ZÀ-ÿ\s\-]+$"
+            title="Le nom doit contenir que des lettres, des espaces et des tirets">
     </div>
     <div>
         <label for="nom du produit">Nom du produit à ajouter: </label>
-        <input type="name" id="name" name="name" required>
+        <input type="name" id="name" name="name" required
+        pattern="^[a-zA-ZÀ-ÿ\s\-]+$"
+            title="Le nom doit contenir que des lettres, des espaces et des tirets">
     </div>
     <div>
         <label for="prix du produit">prix du produit :</label>
