@@ -9,6 +9,7 @@
 
 <body>
     <form action="/traitementeco.php" action="POST"></form>
+    <h2>Client</h2>
     <div>
         <label for="lastname Custumer">Nom :</label>
         <input type="text" id="familyname" name="familyname" required
@@ -21,6 +22,7 @@
         pattern="^[a-zA-ZÀ-ÿ\s\-]+$"
             title="Le nom doit contenir que des lettres, des espaces et des tirets">
     </div>
+    <h2>Fruit</h2>
     <div>
         <label for="nom du produit">Nom du produit à ajouter: </label>
         <input type="name" id="name" name="name" required
@@ -34,6 +36,9 @@
     <div>
         <button type="submit">Ajouter le produit</button>
     </div>
+</form>
+
+<div id="message"></div>
 </body>
 
 </html>
