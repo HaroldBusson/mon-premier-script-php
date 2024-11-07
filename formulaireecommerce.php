@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <form action="/traitement.php" action="POST"></form>
+    <form action="/traitementeco.php" action="POST"></form>
     <div>
         <label for="lastname Custumer">Nom :</label>
         <input type="text" id="familyname" name="familyname">
