@@ -15,7 +15,7 @@ FOREIGN KEY (idCustomer) REFERENCES Customer (id),
 total DECIMAL (10,2) NOT NULL,  -- DECIMAL evite les problèmes de précision
 );
 
-CREATE TABLE IF NOT EXITS Product (
+CREATE TABLE IF NOT EXISTS Product (
 id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 `name` VARCHAR (100) NOT NULL,
 price DECIMAL (10, 2) NOT NULL
