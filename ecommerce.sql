@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS OrderOrder_Product (
 id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 id_order INT NOT NULL,
 id_product INT NOT NULL,
-FOREIGN KEY (id_order) REFERENCES `Order` (id) INT (100),
+FOREIGN KEY (id_order) REFERENCES `Order` (id) INT (100), -- `` pour ne pas SQL ne confonde avec une fonction
 FOREIGN KEY (id_product) REFERENCES Product (id) (100),
 quantity INT NOT NULL CHECK (quantity > 0 ) -- Pour garantir que la quantité soit pas négative
 );
