@@ -1,4 +1,4 @@
-CREATE DATABASE IF NOT EXIsTS ECOMMERCE
+CREATE DATABASE IF NOT EXISTS ECOMMERCE;
 USE ECOMMERCE;
 
 CREATE TABLE Customer (
@@ -9,7 +9,7 @@ familyname VARCHAR (100) NOT NULL
 
 CREATE TABLE IF NOT EXISTS Order (
 id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-`date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+`date` DATETIME NOT NULL CURRENT_TIMESTAMP,
 `status` ENUM('Created', 'check', 'ship') NOT NULL, -- ENUM est plus explicite et plus facile à gérer pour des opérations de lecture et d'écriture.
 FOREIGN KEY (idCustomer) REFERENCES Customer (id),
 total DECIMAL (10,2) NOT NULL,  -- DECIMAL evite les problèmes de précision
