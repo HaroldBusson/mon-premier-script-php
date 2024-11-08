@@ -29,3 +29,4 @@ FOREIGN KEY (id_order) REFERENCES `Order` (id) INT (100), -- `` pour ne pas SQL 
 FOREIGN KEY (id_product) REFERENCES Product (id) (100),
 quantity INT NOT NULL CHECK (quantity > 0 ) -- Pour garantir que la quantité soit pas négative
 );
+

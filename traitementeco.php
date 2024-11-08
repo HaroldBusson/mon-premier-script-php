@@ -20,7 +20,7 @@ try {
         $quantity = isset($_POST['quantity']) ? (int)$_POST['quantity'] : null;
 
         // Validation des données (s'assurer que les champs ne sont pas vides)
-        if (empty($id_order) || empty($id_product) || empty($quantity)) {
+     if (empty($id_order) || empty($id_product) || empty($quantity)) {
             echo "Tous les champs doivent être remplis.";
         } else {
             // Préparer la requête SQL pour insérer les données dans la table
@@ -35,9 +35,9 @@ try {
             $stmt->bindParam(':quantity', $quantity, PDO::PARAM_INT); // PDO::PARAM_INT indique à PDO que ces paramètres doivent être interprétés comme des entiers
             
             // Exécuter la requête
-            if ($stmt->execute()) {
+         if ($stmt->execute()) {
                 echo "Les données ont été insérées avec succès.";
             } else {
                 echo "Erreur lors de l'insertion de données.";
-
             }
+?>
