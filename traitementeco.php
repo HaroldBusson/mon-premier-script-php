@@ -24,7 +24,7 @@ try {
             echo "Tous les champs doivent être remplis.";
         } else {
             // Préparer la requête SQL pour insérer les données dans la table
-            $sql = "INSERT INTO OrderOrder_Product (id_order, id_product, quantity) VALUES (:id_order, :id_product, :quantity)";
+            $sql = "INSERT INTO OrderOrder_Product (id_order, id_product, quantity) VALUES (:id_order, :id_product, :quantity)"; // : car ceux sont des variables
             
             // Préparer la requête
             $stmt = $pdo->prepare($sql);
